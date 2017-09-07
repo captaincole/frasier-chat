@@ -3,3 +3,4 @@ chatterbot==0.7.6
 PyYAML==3.12
 gunicorn==19.7.1
 SQLAlchemy==0.7.7
+pymongo==3.5.1

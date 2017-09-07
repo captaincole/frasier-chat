@@ -12,7 +12,8 @@ chatbot = ChatBot(
     trainer='chatterbot.trainers.ListTrainer',
     logic_adapters=[
         "chatterbot.logic.BestMatch"
-    ]
+    ],
+    database_uri="mongodb://thielcole:GbQkNXHzEv3De683@cluster0-shard-00-00-svwvf.mongodb.net:27017,cluster0-shard-00-01-svwvf.mongodb.net:27017,cluster0-shard-00-02-svwvf.mongodb.net:27017/frasier?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
 )
 
 with open("fraisercrane.yml", 'r') as stream:
@@ -21,7 +22,7 @@ with open("fraisercrane.yml", 'r') as stream:
     print(out['conversations'][1])
     # flatten array
     flat_list = [item for sublist in out['conversations'] for item in sublist]
-    chatbot.train(flat_list)
+    # chatbot.train(flat_list)
 
 # Train based on the english corpus
 # chatbot.train("chatterbot.corpus.english")
