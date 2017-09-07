@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 chatbot = ChatBot(
     'Terminal',
-    storage_adapter="chatterbot.storage.JsonFileStorageAdapter",
+    storage_adapter="chatterbot.storage.MongoDatabaseAdapter",
     trainer='chatterbot.trainers.ListTrainer',
     logic_adapters=[
         "chatterbot.logic.BestMatch"
