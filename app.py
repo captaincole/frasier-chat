@@ -21,7 +21,7 @@ with open("fraisercrane.yml", 'r') as stream:
     print(out['conversations'][1])
     # flatten array
     flat_list = [item for sublist in out['conversations'] for item in sublist]
-    # chatbot.train(flat_list)
+    chatbot.train(flat_list)
 
 # Train based on the english corpus
 # chatbot.train("chatterbot.corpus.english")
