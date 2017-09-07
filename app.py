@@ -1,5 +1,5 @@
 from chatterbot import ChatBot
-from flask import Flask
+from flask import Flask, jsonify, request
 import yaml
 app = Flask(__name__)
 # Uncomment the following lines to enable verbose logging
@@ -35,6 +35,10 @@ def response():
     bot_response = chatbot.get_response('I would like to book a flight.')
     return str(bot_response)
 
+@app.route('/prediction', methods=['POST', 'GET'])
+def prediction():
+    bot_response = chatbot.get_response(srt(request.json['message']))
+    return jsonify(response)
 
 if __name__ == "__main__":
 	app.run()
