@@ -1,3 +1,5 @@
-### Fraiser Crane Chatterbot
-## Talk to Frasier crane, he's listening
+# Fraiser Crane Chatterbot, He's Listening
+### An implementation of Chatterbot, trained on scripts from season 1-11 of Frasier
+
+
 
