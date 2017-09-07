@@ -32,3 +32,7 @@ print("Type something to begin...")
 def response():
     bot_response = chatbot.get_response('I would like to book a flight.')
     return str(bot_response)
+
+
+if __name__ == "__main__":
+	app.run()
