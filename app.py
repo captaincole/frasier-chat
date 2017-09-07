@@ -20,13 +20,12 @@ with open("fraisercrane.yml", 'r') as stream:
     print(out['conversations'][1])
     # flatten array
     flat_list = [item for sublist in out['conversations'] for item in sublist]
-    chatbot.train(flat_list)
+    # chatbot.train(flat_list)
 
 # Train based on the english corpus
 # chatbot.train("chatterbot.corpus.english")
 
 # Get a response to an input statement
-print("Type something to begin...")
 
 @app.route("/")
 def response():
@@ -36,4 +35,3 @@ def response():
 
 if __name__ == "__main__":
 	app.run()
-    
