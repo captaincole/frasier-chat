@@ -9,7 +9,6 @@ app = Flask(__name__)
 chatbot = ChatBot(
     'Terminal',
     storage_adapter="chatterbot.storage.JsonFileStorageAdapter",
-    database='./database/database.db',
     trainer='chatterbot.trainers.ListTrainer',
     logic_adapters=[
         "chatterbot.logic.BestMatch"
