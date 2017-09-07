@@ -1,0 +1,50 @@
+{
+	"createdBy" : "Andrew",
+	"name" :  "Cole Family",
+	"showRules" : true,
+	"headerMessage" :  "Welcome to the Cole Family Workout Challenge. The team with the most amount of points at the end of 7 days wins. Good luck! ",
+	"users" : [
+		{
+			"photoUrl" : "",
+			"username" : "Andrew",
+			"team" : "Bad Boys",
+			"points" : 0
+		},
+		{
+			"photoUrl" : "",
+			"username" : "ecole",
+			"team" : "Good Guys",
+			"points" : 0
+		},
+		{
+			"photoUrl" : "",
+			"username" : "trish",
+			"team" : "Bad Boys",
+			"points" : 0
+		},
+		{
+			"photoUrl" : "",
+			"username" : "schmalzy",
+			"team" : "Good Guys",
+			"points" : 0
+		},
+		{
+			"photoUrl" : "",
+			"username" : "crazycoles"
+			"team" : "Bad Boys",
+			"points" : 0
+		},
+		{
+			"photoUrl" : "",
+			"username" : "bikermom",
+			"team" : "Good Guys",
+			"points" : 0
+		}
+	],
+	"chatId" : "",
+	"teams" : [
+		"Bad Boys",
+		"Good Guys"
+	],
+	"type" : "Daily Workout"
+}
