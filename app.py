@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 chatbot = ChatBot(
     'Terminal',
+    database='./database/db.sqlite3',
     trainer='chatterbot.trainers.ListTrainer',
     logic_adapters=[
         "chatterbot.logic.BestMatch"
