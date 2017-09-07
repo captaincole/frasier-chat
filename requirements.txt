@@ -1,3 +1,4 @@
 Flask==0.12.2
 chatterbot==0.7.6
 PyYAML==3.12
+gunicorn=19.7.1
