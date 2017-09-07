@@ -38,7 +38,7 @@ def response():
 @app.route('/prediction', methods=['POST', 'GET'])
 def prediction():
     bot_response = str(chatbot.get_response(str(request.json['message'])))
-    return jsonify(response)
+    return jsonify(bot_response)
 
 if __name__ == "__main__":
 	app.run()
