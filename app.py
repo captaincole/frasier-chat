@@ -8,18 +8,23 @@ app = Flask(__name__)
 
 chatbot = ChatBot(
     'Terminal',
+    preprocessors=[
+        'chatterbot.preprocessors.clean_whitespace',
+        'chatterbot.preprocessors.unescape_html'
+    ],
     storage_adapter="chatterbot.storage.MongoDatabaseAdapter",
     trainer='chatterbot.trainers.ListTrainer',
     logic_adapters=[
         "chatterbot.logic.BestMatch"
     ],
+    filters=["chatterbot.filters.RepetitiveResponseFilter"],
     database_uri="mongodb://thielcole:GbQkNXHzEv3De683@cluster0-shard-00-00-svwvf.mongodb.net:27017,cluster0-shard-00-01-svwvf.mongodb.net:27017,cluster0-shard-00-02-svwvf.mongodb.net:27017/frasier?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
 )
 
 with open("fraisercrane.yml", 'r') as stream:
     str_data = stream.read()
     out = yaml.load(str_data)
-    print(out['conversations'][1])
+    # print(out['conversations'][1])
     # flatten array
     flat_list = [item for sublist in out['conversations'] for item in sublist]
     # chatbot.train(flat_list)
