@@ -17,7 +17,6 @@ chatbot = ChatBot(
     logic_adapters=[
         "chatterbot.logic.BestMatch"
     ],
-    filters=["chatterbot.filters.RepetitiveResponseFilter"],
     database_uri="mongodb://thielcole:GbQkNXHzEv3De683@cluster0-shard-00-00-svwvf.mongodb.net:27017,cluster0-shard-00-01-svwvf.mongodb.net:27017,cluster0-shard-00-02-svwvf.mongodb.net:27017/frasier?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
 )
 
